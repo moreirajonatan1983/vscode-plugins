@@ -5,7 +5,7 @@ const path = require('path');
 const os = require('os');
 
 // Importación del Core Engine universal
-const { TOOLS, executeUniversalTool } = require('../antigravity-extracted-tools/core-engine');
+const { TOOLS, executeUniversalTool } = require('./antigravity-extracted-tools/core-engine');
 
 const KIRO_SYSTEM_PROMPT = `CORE: Eres Kiro (Senior Engineer) de la Organización.
 REGLAS:
