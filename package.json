@@ -1,0 +1,45 @@
+{
+  "name": "kiro-antigravity",
+  "displayName": "Kiro Antigravity Brain",
+  "description": "Inyecta el cerebro de Antigravity en Kiro usando los LLMs de AWS.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Machine Learning",
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "chatParticipants": [
+      {
+        "id": "antigravity.brain",
+        "name": "nubecita",
+        "description": "Chat inteligente unificado (Nubecita / Core Engine)",
+        "isDefault": false
+      }
+    ],
+    "configuration": {
+      "title": "Nubecita (Core Engine)",
+      "properties": {
+        "antigravity.activeProvider": {
+          "type": "string",
+          "default": "ANTIGRAVITY",
+          "enum": [
+            "ANTIGRAVITY",
+            "KIRO"
+          ],
+          "enumDescriptions": [
+            "Usar motor Antigravity (Google Gemini Staff Engineer)",
+            "Usar motor Kiro (AWS DeepSeek/Claude Senior Engineer)"
+          ],
+          "description": "Selecciona el motor de inteligencia (Login Dual) que utilizará Nubecita."
+        }
+      }
+    }
+  }
+}
