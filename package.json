@@ -1,5 +1,6 @@
 {
   "name": "kiro-antigravity",
+  "publisher": "collie",
   "displayName": "Kiro Antigravity Brain",
   "description": "Inyecta el cerebro de Antigravity en Kiro usando los LLMs de AWS.",
   "version": "0.1.0",
